@@ -16,45 +16,52 @@
             font-size: 3em;
             text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
         }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            border: 2px solid #00ff00;
-            color: #00ff00;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: 0.3s;
-        }
-        a:hover {
-            background-color: #00ff00;
-            color: #000;
-            box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
-        }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(13, 1fr);
-            grid-gap: 20px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 30px;
+            align-items: center;
             justify-items: center;
+            margin-bottom: 30px;
         }
         .apk-container {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #00ff00;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #111;
+            border: 2px solid #00ff00;
+            padding: 10px;
+            border-radius: 5px;
+            width: 70%;
         }
-        img {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 10px;
+        .apk-container img {
+            width: 70px;
+            height: 70px;
         }
-        h2 {
-            margin: 10px 0;
+        .apk-text {
+            flex-grow: 1;
+            margin-left: 20px;
+            font-size: 1.5em;
+            text-align: left;
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #00ff00;
+            color: #000;
+            border: 2px solid #00ff00;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
             font-size: 1.2em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #111;
+            color: #00ff00;
         }
         .telegram-button {
             display: inline-block;
-            margin: 20px 0;
+            margin: 30px 0;
             padding: 15px 30px;
             background-color: #0088cc;
             color: white;
@@ -68,7 +75,6 @@
         .telegram-button:hover {
             background-color: #00ff00;
             color: #000;
-            box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
         }
     </style>
 </head>
@@ -82,81 +88,80 @@
     <div class="grid-container">
         <div class="apk-container">
             <img src="logo1.png" alt="91club Hack V2.0 Logo">
-            <h2>91club Hack V2.0</h2>
-            <a href="91club Hack V2.0.apk" download>Download 91club Hack V2.0</a>
+            <div class="apk-text">91club Hack V2.0</div>
+            <a href="91club Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo2.png" alt="55club Hack V2.0 Logo">
-            <h2>55club Hack V2.0</h2>
-            <a href="55club Hack V2.0.apk" download>Download 55club Hack V2.0</a>
+            <div class="apk-text">55club Hack V2.0</div>
+            <a href="55club Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo3.png" alt="In999 Hack V2.0 Logo">
-            <h2>In999 Hack V2.0</h2>
-            <a href="In999 Hack V2.0.apk" download>Download In999 Hack V2.0</a>
+            <div class="apk-text">In999 Hack V2.0</div>
+            <a href="In999 Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo4.png" alt="Big Mumbai Hack V2.0 Logo">
-            <h2>Big Mumbai Hack V2.0</h2>
-            <a href="Big Mumbai Hack V2.0.apk" download>Download Big Mumbai Hack V2.0</a>
+            <div class="apk-text">Big Mumbai Hack V2.0</div>
+            <a href="Big Mumbai Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo5.png" alt="Tiranga Hack V2.0 Logo">
-            <h2>Tiranga Hack V2.0</h2>
-            <a href="Tiranga Hack V2.0.apk" download>Download Tiranga Hack V2.0</a>
+            <div class="apk-text">Tiranga Hack V2.0</div>
+            <a href="Tiranga Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo6.png" alt="Big Daddy Hack V2.0 Logo">
-            <h2>Big Daddy Hack V2.0</h2>
-            <a href="Big Daddy Hack V2.0.apk" download>Download Big Daddy Hack V2.0</a>
+            <div class="apk-text">Big Daddy Hack V2.0</div>
+            <a href="Big Daddy Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo7.png" alt="Win101 Hack V2.0 Logo">
-            <h2>Win101 Hack V2.0</h2>
-            <a href="Win101 Hack V2.0.apk" download>Download Win101 Hack V2.0</a>
+            <div class="apk-text">Win101 Hack V2.0</div>
+            <a href="Win101 Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo8.png" alt="OkWin Hack V2.0 Logo">
-            <h2>OkWin Hack V2.0</h2>
-            <a href="OkWin Hack V2.0.apk" download>Download OkWin Hack V2.0</a>
+            <div class="apk-text">OkWin Hack V2.0</div>
+            <a href="OkWin Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo9.png" alt="Bounty Game Hack V2.0 Logo">
-            <h2>Bounty Game Hack V2.0</h2>
-            <a href="Bounty Game Hack V2.0.apk" download>Download Bounty Game Hack V2.0</a>
+            <div class="apk-text">Bounty Game Hack V2.0</div>
+            <a href="Bounty Game Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo10.png" alt="Tc Lottery Hack V2.0 Logo">
-            <h2>Tc Lottery Hack V2.0</h2>
-            <a href="Tc Lottery Hack V2.0.apk" download>Download Tc Lottery Hack V2.0</a>
+            <div class="apk-text">Tc Lottery Hack V2.0</div>
+            <a href="Tc Lottery Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo11.png" alt="Daman Hack V2.0 Logo">
-            <h2>Daman Hack V2.0</h2>
-            <a href="Daman Hack V2.0.apk" download>Download Daman Hack V2.0</a>
+            <div class="apk-text">Daman Hack V2.0</div>
+            <a href="Daman Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
-        <!-- Newly added APKs -->
         <div class="apk-container">
             <img src="logo12.png" alt="Diuwin Hack V2.0 Logo">
-            <h2>Diuwin Hack V2.0</h2>
-            <a href="Diuwin Hack V2.0.apk" download>Download Diuwin Hack V2.0</a>
+            <div class="apk-text">Diuwin Hack V2.0</div>
+            <a href="Diuwin Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
 
         <div class="apk-container">
             <img src="logo13.png" alt="Aviator God Hack V2.0 Logo">
-            <h2>Aviator God Hack V2.0</h2>
-            <a href="Aviator God Hack V2.0.apk" download>Download Aviator God Hack V2.0</a>
+            <div class="apk-text">Aviator God Hack V2.0</div>
+            <a href="Aviator God Hack V2.0.apk" class="download-button" download>APK DOWNLOAD</a>
         </div>
     </div>
 
